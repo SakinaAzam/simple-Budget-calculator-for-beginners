@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <center>
+    <div class="parent-content">
+        <div class="child-content">
+          <h2 style="font-size: 40px; padding-top: 20px;">Budget Calculator</h2>
+          <p style="
+              color: black;
+              font-weight: bold;
+              font-size: 20px;
+              font-style: italic;
+            ">
+            Type your prices to evaluate total cost:
+          </p>
+        
+          <p class="input-flex">
+            <label>Watch:</label>
+            <input class="form__input" id="inputWatch" type="number" placeholder="Watch (50)" value="" ><br>
+            <label>Phone:</label>
+            <input class="form__input" id="inputPhone" type="number" placeholder="Phone (100)" value=""><br>
+            <label>Laptop:</label>
+            <input id="inputLaptop" type="number" placeholder="Laptop (500)" value=""><br>
+            <br>
+            <button class="btn-calculate" onclick="calculatebudget()">
+              Calculate Cost
+            </button>
+          </p>
+  
+          <p style="
+           color:black;
+                font-weight: bold;
+                font-size: 20px;
+                font-style: italic;
+              ">Total Cost: </p>
+                <p style="font-size: 30px; background-color: rgb(82, 115, 89); color: white;"
+                id="output"></p>
+        </div>
+      </div>
+  </center>
+    <script src="./script.js"></script>
+</body>
+</html>
